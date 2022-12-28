@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <link rel="stylesheet" href="./styles/index.css">
+    <script src="https://kit.fontawesome.com/d5e75e6efa.js" crossorigin="anonymous"></script>
+    <!-- 위에 있는 코드는 fontawesome에서 가져온 킷코드로, fontawesome의 아이콘이나 폰트를 사용하기 위해
+    작성하는 것이다. -->
+    <!-- fontawesome페이지에서 아이콘즈 - 프리 - 에서 원하는 아이콘을 선택하고 가져오면 된다.
+    대부분 무료이나, 유료가 퀄리티가 좋다. -->
+    <title>OOO님의 미니홈피 :: 사이좋은 사람들, 싸이월드</title>
+</head>
+
+<body>
+    <div class="background">
+        <div class="outerbox">
+            <div class="wrapper">
+                <div class="wrapper__left">
+                    <!-- 위에 있는 wrapper__left 코드 중에 언더바 두 번은 회사, 팀 마다 사용하는 것이 다르다.
+                    예를 들어 하이픈, 언더바 한 번 등으로 구분하기도 한다. -->
+                    <div class="wrapper__left__header">
+                        <!-- TODAY 0 | TOTAL 12345로 그냥 입력하면 단순 텍스트 -->
+                        <div class="today">
+                            <span>TODAY</span>
+                            <span>0</span>
+                            <span> | TOTAL</span>
+                            <span>12345</span>
+                            <!-- 17번 문단에 있는 것 처럼 작성해도 지금 당장은 상관은 없지만, 정렬에 있어서 이점이 있기 때문에
+                            span태그로 문장별로 잘라서 작성을 한다.  -->
+                        </div>
+                    </div>
+                    <div class="wrapper__left__body">
+                        <div class="w__left__body__header">
+                            <div class="w__left__body__header__gray"></div>
+                            <div class="w__left__body__header__line"></div>
+                        </div>
+                        <div class="w__left__body__profile"> <img src="" alt="">
+                            <div class="w__left__body__profile__name">
+                                <i class="fa-solid fa-user"></i>
+                                <a href="https://naturia.co.kr"> 이름</a>
+                            </div>
+                            <div class="w__left__body__profile__phone">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="https://naturia.co.kr"> Phone</a>
+                            </div>
+                            <div class="w__left__body__profile__email">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="https://naturia.co.kr"> E-mail</a>
+                            </div>
+                            <div class="w__left__body__profile__instagram">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a href="https://naturia.co.kr"> instragram</a>
+                            </div>
+                            <!-- 2022 12 19 21:13에 여기까지 작업 함. -->
+                            <!-- 프로필, 푸터까지 만들어 오는 것이 과제. -->
+                        </div>
+                        <div class="w__left__body__footer">
+                            <span class="todays_feeling">오늘의 기분</span>
+                            <select name="feel" id="felling">
+                                <optgroup>
+                                    <option value=" happy">기쁨 😃</option>
+                                    <option value="soso">평범 🤔</option>
+                                    <option value="bad">나쁨 😡</option>
+                                    <option value="happy">기쁨 😃</option>
+                                </optgroup>
+                            </select>
+                            <!-- 이모지를 입력하기 위해서는 펑션으로 그냥 입력하자. 윈도우는 윈도우+마침표 -->
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper__right">
+                    <div class="wrapper__right__header">
+                        <div class="wrapper__right__header__title">
+                            사이좋은 사람들, 싸이월드
+                        </div>
+                        <div class="wrapper__right__header__setting">
+                            사생활보호설정
+                        </div>
+                    </div>
+                    <div class="wrapper__right__body">
+                        <iframe src="./home.html"></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
