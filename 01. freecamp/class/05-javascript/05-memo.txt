@@ -30,3 +30,4 @@ null	null - 아무런 값도 없음
 undefined	undefined - 원시값
 NaN (en-US)	NaN - 숫자가 아님
 위의 값을 제외하면 나머지는 true로 리턴한다.
+
