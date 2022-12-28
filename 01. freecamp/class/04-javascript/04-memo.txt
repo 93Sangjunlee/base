@@ -16,3 +16,32 @@ Undefined : 없음 : 공란(할당한 적이 없음.)의도x
 느슨한 동치 연산자 : 안정성 낮음(등호 두 개)
 데이터 값은 같으나 타입이 달라도 true
 
+논리연산자
+1. and : && : 양쪽이 모두 true여야 true를 리턴
+2. or : || : 한 쪽만 true여도 true를 리턴
+3. not : ! : boolean을 리버스
+
+1+1
+2
+1+"만 원"
+'1만 원'
+1+"1"
+'11'
+1-"1"
+0
+"코드"+"캠프"
+'코드캠프'
+"123" == 123
+true
+"123" === 123
+false
+true && true
+true
+true && false
+false
+false || true
+true
+!false
+true
+!true
+false
