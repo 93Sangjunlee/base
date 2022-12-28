@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입</title>
+    <link href="./02-signup.css" rel="stylesheet" />
+    <!-- 위 코드를 풀어서 설명하자면, link태그로 html과 css를 연결했고, rel(관계)태그로 앞서 연결된
+    파일과 현재 html파일의 관계를 정의했다. -->
+    <!-- <style>
+    .pw {
+    border: 1px solid blue;
+    }
+    </style> -->
+</head>
+
+<body>
+    <h1>회원가입</h1>
+    <input type="text" placeholder="이메일을 입력해주세요" style="border:1px solid #292929;"><br><br>
+    <!-- 위 방법은 태그 내에 css를 직접 삽입하는 방법이다. -->
+    <!-- placeholder속성은 input박스 안에 안내 문구를 넣는 속성이다. -->
+    <input type="text" placeholder="이름을 입력해주세요"><br><br>
+    <input class="pw" type="password" placeholder="비밀번호를 입력해주세요"><br><br>
+    <input class="pw" type="password" placeholder="비밀번호를 다시 입력해주세요"><br><br>
+    <!-- 위에 있는 class="pw"는 헤드 태그에 css를 입력하는 방법이다. -->
+    <!-- input태그의 html과 css의 디폴트값은 텍스트이다. -->
+    <select>
+        <option disabled="true" selected="ture">지역을 선택하세요</option>
+        <!-- 선택박스에서 위에 사용된 disavled와 selected 속성을 사용하면 안내문구만 넣고, 해당 안내
+        문구를 선택할 수 없도록 할 수 있다. -->
+        <option value="">서울</option>
+        <option value="">경기</option>
+        <option value="">인천</option>
+    </select><br><br>
+    <input type="radio" name="gender"><span>여성</span>
+    <!-- 둘 혹은 셋 등 하나를 선택하게 하는 것은 radio 속성이다. 셀프클로징 태그이다. -->
+    <!-- 아래 있는 남성은 눈에 안보이는 span태그로 감싸져 있는 상태이다. 위의 여성 처럼 -->
+    <input type="radio" name="gender">남성<br><br>
+    <input type="checkbox"> 이용약관 및 개인정보 수집에 동의합니다.
+    <hr>
+    <button>가입하기</button>
+    <!-- 오래 전, 버튼 태그는 input태그를 사용했었다. 하지만 버튼 태그를 꾸미기 위해 
+    신식의 페이지에서 자주 사용한다. 따라서, input태그는 자유롭지 못하기 때문에 input태그를 사용하지
+    아니하고, button태그를 사용하게 되었다. 아래 코드를 참고하자-->
+    <!-- <input type="button" value="가입하기"> -->
+    <hr>
+    css를 불러와서 사용하려면 위에 있는 6번 단락을 참고하자 <br><br>
+    <!-- 6번 단락에서는 link태그를 이용해서 02-singnup.css를 불러와서 지금 회원가입 문서에 적용하였다. -->
+    <!--
+    * : 전체 선택
+    div : 태그 선택
+    .container : 클래스 선택(이름 정의)(div class="container") - 중복해서 적용 가능함.
+    #idname : id 선택(div id="idname) - 단 하나의 태그에만 적용함.
+     -->
+    html 태그들은 박스 모델로 이루어져있다 <br>
+    해당 내용들은 아래를 참고하자 <br>
+    margin : 박스의 바깥 여백 <br>
+    border : 박스의 기준이 되는 바깥 테두리 <br>
+    padding : 박스의 안쪽 여백 <br>
+    contents : 박스의 내용<br>
+    개똥같은 css는 디폴트가 contents이다. border로 지정해두지 않으면 나중에 피본다. <br>
+    꼭 css작업을 할 때 박스(사진, 영상 등이 들어가는)를 만들어야 한다면 border로 지정을 해 두자.
+</body>
+
+</html>

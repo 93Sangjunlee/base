@@ -1,0 +1,208 @@
+/* css에서 편안한 작업을 위해 가장 먼저 해야 하는 것은 박스의 사이즈를 정하는 것이다.
+되도록이면 box-sizing은 border-box로 하자 */
+*{
+    box-sizing: border-box;
+margin: 0px;
+/* 최초에는 마진값이 설정되어 있는데, 상단의 margin값을 0px로 주면 없어진다. */
+}
+
+a {
+    text-decoration-line: none;
+    color: #000000;
+}
+a:hover{
+    text-shadow: 1px 1px 1px #183052;
+    color: #183052;
+}
+a:visited{
+    text-decoration: none;
+}
+
+.background{
+    width: 1024px;
+    height: 600px;
+    background-image: url("../images/graybg.png");
+    padding: 20px 0px 0px 20px;
+    /* 위에 있는 padding은 순서대로 12, 3, 6, 9시 방향 패딩값이다. */
+}
+
+.outerbox{
+    width: 808px;
+    height: 544px;
+    background-image: url("../images/outerbox.png");
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+/* background-color: aquamarine; */
+padding: 32px 0px 0px 32px;
+}
+
+    .wrapper__left{
+    display: flex;
+    flex-direction: column;
+    width: 208px;
+    height: 472px;
+    /* background-color: blueviolet; */
+    }
+
+        .wrapper__left__header{
+        width: 100%;
+        /* 너비, 높이를 %로 값을 줄 때에는 부모 속성의 값을 참조한다. */
+        height: 30px;
+        /* background-color: aliceblue; */
+        display: flex;
+        flex-direction: row;
+        /* flex의 정렬과 관련해서 flex의 정렬이 row일 경우에는 justify-content가 수평정렬
+        align-items가 수직정렬이 되고
+        flex의 정렬이 column일 경우에는 align-items가 수평정렬이
+        justify-content가 수직정렬이 된다. */
+        justify-content: center;
+        align-items: center;
+        }
+            .today{
+                font-size: 9px;
+            }
+
+        .wrapper__left__body{
+        width: 100%;
+        height: 100%;
+        /* 원래대로라면 wrapper__left의 height값을 그대로 가져오겠지만, flex를 사용해서 column정렬을 했기 때문에
+        100%에서 wrapper__left__header의 height값인 30px를 뺀 나머지를 가져오게 된 것이다. */
+        /* background-color: black; */
+        border: 1px solid gray;
+        border-radius: 15px;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px;
+        }
+
+            .w__left__body__header{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+                .w__left__body__header__gray{
+                    width: 148px;
+                    height: 133px;
+                    background-color: gray;
+                }
+
+                .w__left__body__header__line{
+                border-top: 1px dashed #000000;
+                
+                /* solid는 일반적인 선이고, dotted는 점선이다. */
+                margin: 12px 0px;
+                /* padding과 달리 margin이 두 개만 px값을 주는 이유는 
+                첫 번째 값이 상하, 두 번째 값이 좌우의 여백이기 때문이다. */
+                }
+
+            .w__left__body__profile{
+            width: 100%;
+            height: 100%;
+            /* background-color: blue; */
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            letter-spacing: 4px;
+            font-size: 10px;
+            color: #183052;
+            text-decoration-color: #183052;
+            }
+                .w__left__body__profile__name{
+                margin-bottom: 10px;
+                }
+
+                .w__left__body__profile__name:hover{
+                color: #183052;
+                transition: all 0.2s linear;
+                transform: scale(1.05);
+                }
+
+                .w__left__body__profile__phone{
+                    margin-bottom: 10px;
+                }
+
+                .w__left__body__profile__phone:hover{
+                    transition: all 0.2s linear;
+                    transform: scale(1.05);
+                }
+
+                .w__left__body__profile__email{
+                    margin-bottom: 10px;
+                }
+
+                .w__left__body__profile__email:hover{
+                    transition: all 0.2s linear;
+                    transform: scale(1.05);
+                }
+
+                .w__left__body__profile__instagram{
+
+                }
+
+                .w__left__body__profile__instagram:hover{
+                    transition: all 0.2s linear;
+                    transform: scale(1.05);
+                }
+
+            .w__left__body__footer{
+                width: 100%;
+                height: 84px;
+                display: flex;
+                flex-direction: column;
+                font-size: 10px;
+            }
+            #felling{
+            font-size: 8px;
+            border-radius: 0px;
+            border: 1px solid #183052;
+            
+            }
+            .todays_feeling{
+                color: gray;
+            }
+
+        .wrapper__right{
+        width: 524px;
+        height: 472px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-left: 5px;
+        }
+
+            .wrapper__right__header{
+                width: 510px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 0px 14px;
+                align-items: flex-end;
+            }
+
+                .wrapper__right__header__title, .wrapper__right__header__setting{
+                color: #55b2e4;
+                font-size: 9px;
+                }
+                .wrapper__right__header__title{
+                color: #000000;
+                font-size: 16px;
+                }
+
+            .wrapper__right__body{
+                width: 510px;
+                height: 445px;
+                border: 1px solid gray;
+                border-radius: 15px;
+                background-color: #ffffff;
+            }
+            iframe{
+                width: 100%;
+                height: 100%;
+                border: none;
+            }

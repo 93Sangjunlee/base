@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex, position, grid</title>
+</head>
+
+<body>
+    <p>블록 요소와 인라인 요소가 있다.
+        블록은 한 줄을 다 먹고
+        인라인 요소는 정해진 구역만 먹는다.</p>
+
+    <p>flex : 여러 태그를 하나로 묶어서 정렬하는 것이다. <br>
+        css에는 디폴트 값이 있다. 아무것도 입력하지 않아도 박스가 좌측 상단에 위치하게 된다. <br>
+        코드 상에서는 대각선으로 움직일 수 없고, x축에서 y축으로 이동하거나 y축에서 x축으로 이동하는 방법 뿐이다. <br>
+        정렬을 하기 위해서는 기준과 방향이 필요하다. <br>
+        박스를 수직으로 나열하기 위해서는 : flex-direction: colum; <br>
+        박스를 수평으로 나열하기 위해서는 : flex-direction: row; <br>
+        방향이 우선이기 때문에 첫 방향에 따라서 이후에 들어가는 명령어가 달라진다. <br>
+        flex-direction과 justify-content는 방향이 같고, align-items는 반대라고 생각하면 편하다.</p>
+    <p>position은 flex와는 다르게 절대위치와 상대위치로 결정하게 된다 <br>
+        position: absolute; 박스의 절대 위치를 결정한다. <br>
+        position: relative; 박스의 위치를 부모 박스의 위치를 기준으로 상대적으로 결정한다. <br>
+        position: fixed; 박스의 위치를 화면을 기준으로 절대 위치상에 결정시킨다 <br>
+        네비케이션 바와 같이 화면상에 고정되어야 하는 요소들은 fixed를 사용하게 된다 <br>
+
+    </p>
+    <div name="box">box</div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

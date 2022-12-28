@@ -1,0 +1,82 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+}
+/* html{
+    width: 100%;
+    height: 100%;
+} */
+
+html, body {
+width: 100%;
+height: 100%;
+}
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* space-between은 상하로 끝까지 떨어뜨린다. */
+    }
+    .wrapper__header{
+        width: 100%;
+        height: 48px;
+        /* background-color: aquamarine; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        /* wrapper__header의 사이즈를 48px로 지정을 했기 때문에 한계치까지 떨어진 것이다. */
+    }
+
+        .wrapper__header__contents__title{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        }
+        .title{
+        color: #55b2e4;
+        font-size: 13px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        }
+
+        .subtitle{
+        font-size: 8px;
+        padding-left: 5px;
+        }
+
+        .divideLine{
+        width: 100%;
+        border-top: 1px solid gray;
+        }
+        .contents__body{
+        font-size: 11px;
+        color: gray;
+        }
+
+        .wrapper__body {
+            width: 100%;
+            height: 270px;
+                /* background-color: bisque; */
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+            .wrapper__body__header{
+            width: 100%;
+            height: 48px;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding-bottom: 20px;
+            }
+            .wrapper__body__contents {
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+            background-image: url("../images/home_graybg.png");
+            }
