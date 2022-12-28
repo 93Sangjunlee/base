@@ -1,0 +1,32 @@
+조건문
+true, false로 컴퓨터가 판단하고, 이 판단을 근거로 다른 엑션을 실행하게 한다.
+
+조건이 맞으면 A실행, 맞지 않으면 B실행
+
+if(조건) {
+    A 실행
+} else {
+    B 실행
+}
+
+if(A !==B) {
+    명령문 1
+} eles if((C===D) && (E===F)) {
+    명령문 2
+} else {
+    명령문 3
+}
+
+developer.mozilla.org 잘 참고하자.
+
+
+아래의 값들은 별도 할당이 되어 있지 않으면 기본적으로 false이다.
+false	키워드 false
+0	숫자 zero
+-0	음수 zero
+0n	BigInt. 불리언으로 사용될 경우, 숫자와 같은 규칙을 따름. 0n은 거짓 같은 값.
+""	빈 string
+null	null - 아무런 값도 없음
+undefined	undefined - 원시값
+NaN (en-US)	NaN - 숫자가 아님
+위의 값을 제외하면 나머지는 true로 리턴한다.
