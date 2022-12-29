@@ -66,7 +66,22 @@ if(profile.age >= 20) {
 }
 // VM7267:2 다 큰 호랑이입니다,
 
+// 이하 예제 자체 부여----------------------------------------------------------
+const profile2 = {
+    name: "국중범",
+    age: 31,
+    school: "삼청교육대"
+}
 
+if(profile2.school === "좋은 학교") {
+    console.log("학군이 좋습니다.")
+} else if(profile2.school === "삼청교육대") {
+    console.log("국가 관련직입니다.")
+} else if(profile2.school === "고양이입니다.") {
+    console.log("고양이는 학교를 다닐 수 없습니다.")
+} else if(profile2.school === "고졸") {
+    console.log("무직일 가능성이 높습니다.")
+}
 
 // 이하 아픈 상처----------------------------------------------------------------
 // const profile = {
