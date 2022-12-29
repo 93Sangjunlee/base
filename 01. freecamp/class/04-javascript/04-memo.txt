@@ -18,6 +18,6 @@ Undefined : 없음 : 공란(할당한 적이 없음.)의도x
   ㄴ 데이터의 타입은 비교하지 않고, 값만 비교를 함.
 
 2. 논리
- ㄴ 1. and : && : 양쪽이 모두 true여야 true를 리턴
- ㄴ 2. or : || : 한 쪽만 true여도 true를 리턴
- ㄴ 3. not : ! : boolean을 리버스
+ ㄴ and : && : 양쪽이 모두 true여야 true를 리턴
+ ㄴ or : || : 한 쪽만 true여도 true를 리턴
+ ㄴ not : ! : boolean을 리버스
