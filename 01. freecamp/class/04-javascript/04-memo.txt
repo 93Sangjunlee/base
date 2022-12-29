@@ -1,7 +1,7 @@
 string : 문자열 : ""로 표시한다.
 number : 숫자 : 123과 같이 표시한다.
 Boolean : 타입 : 참, 거짓 등
-Object : 객체 : []로 표시한다. 배열을 객체의 한 종류로 분류한다.
+Object : 객체 : {}로 표시한다. 배열을 객체의 한 종류로 분류한다.
 Null : 없음. : 공란(직접입력)의도o
 Undefined : 없음 : 공란(할당한 적이 없음.)의도x
 
@@ -21,27 +21,3 @@ Undefined : 없음 : 공란(할당한 적이 없음.)의도x
 2. or : || : 한 쪽만 true여도 true를 리턴
 3. not : ! : boolean을 리버스
 
-1+1
-2
-1+"만 원"
-'1만 원'
-1+"1"
-'11'
-1-"1"
-0
-"코드"+"캠프"
-'코드캠프'
-"123" == 123
-true
-"123" === 123
-false
-true && true
-true
-true && false
-false
-false || true
-true
-!false
-true
-!true
-false
